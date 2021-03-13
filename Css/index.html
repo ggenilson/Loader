@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    .main {
+      width: 10px;
+      height: 10px;
+      background-color: red;
+      border-radius: 50%;
+      animation: 0.5s linear 1s infinite alternate slidein;
+    }
+
+    @keyframes slidein {
+      from {
+        transform: scaleX(0);
+      }
+      to {
+        transform: scaleX(1);
+      }
+    }
+
+    .container {
+      display: flex;
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <div class="main"></div>
+      <div class="main"></div>
+      <div class="main"></div>
+    </div>
+  </body>
+</html>
